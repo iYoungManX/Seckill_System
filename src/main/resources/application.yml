@@ -25,6 +25,19 @@ spring:
       # 测试连接是否可用的查询语句
       connection-test-query: SELECT 1
 
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 10000ms
+
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: 10000ms
+        max-idle: 200
+        min-idle: 5
+
 #Mybatis-plus配置
 mybatis-plus:
   # 配置Mapper.xml映射文件
@@ -35,3 +48,5 @@ mybatis-plus:
 logging:
   level:
     com.seckill.mapper: debug
+
+

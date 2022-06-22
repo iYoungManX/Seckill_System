@@ -7,6 +7,9 @@ import com.seckill.pojo.User;
 import com.seckill.vo.LoginVO;
 import com.seckill.vo.RespBean;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * <p>
  *  服务类
@@ -17,5 +20,6 @@ import com.seckill.vo.RespBean;
  */
 public interface IUserService extends IService<User> {
 
-    RespBean doLogin(LoginVO loginVO);
+    RespBean doLogin(LoginVO loginVO, HttpServletRequest request, HttpServletResponse response);
+    User getUserByCookie(String userTicket,HttpServletRequest request, HttpServletResponse response);
 }
