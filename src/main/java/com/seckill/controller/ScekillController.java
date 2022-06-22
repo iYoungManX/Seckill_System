@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/seckill")
-public class SceKillController {
+public class ScekillController {
     @Autowired
     private IGoodsService goodsService;
 
