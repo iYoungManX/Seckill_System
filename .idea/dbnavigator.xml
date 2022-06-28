@@ -29,7 +29,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0710753f-1687-4106-9cba-21f43b8eacbd">
-      <console name="Connection" type="STANDARD" schema="" session="Main"><![CDATA[select * from goods ;]]></console>
+      <console name="Connection" type="STANDARD" schema="seckill" session="Main"><![CDATA[truncate table seckill_order;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -39,7 +39,12 @@
     <connection id="0710753f-1687-4106-9cba-21f43b8eacbd" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.goods" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.seckill_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.seckill_goods" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.t_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.order_info" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="0710753f-1687-4106-9cba-21f43b8eacbd" dataset="seckill.seckill_order" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -244,11 +249,11 @@
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <tracking-columns>
-        <columnNames value="" />
+      <audit-columns>
+        <column-names value="" />
         <visible value="true" />
         <editable value="false" />
-      </tracking-columns>
+      </audit-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>

@@ -4,6 +4,8 @@ package com.seckill.pojo;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -41,10 +43,10 @@ public class User implements Serializable {
     private String head;
 
     @ApiModelProperty("register time")
-    private LocalDateTime registerDate;
+    private Date registerDate;
 
     @ApiModelProperty("last_login_date")
-    private LocalDateTime lastLoginDate;
+    private Date lastLoginDate;
 
     @ApiModelProperty("login time")
     private Integer loginCount;

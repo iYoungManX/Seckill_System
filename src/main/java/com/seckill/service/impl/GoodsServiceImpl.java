@@ -24,7 +24,7 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsMapper, Goods> implements
     @Autowired
     private GoodsMapper goodsMapper;
     @Override
-    public List<GoodsVo> findGoodVo() {
+    public List<GoodsVo> findGoodsVo() {
         return goodsMapper.findGoodsVo();
     }
 
